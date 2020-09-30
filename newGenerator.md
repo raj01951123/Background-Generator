@@ -8,6 +8,7 @@
     <h1>Background Generator</h1>
     <input class="color1" type="color" name="color1" value="#00ff00">
     <input class="color2" type="color" name="color2" value="#ff0000">
+    <input class="color3" type="color" name="color3" value="YELLOW">
     <h2>Current CSS Background</h2>
     <h3></h3>
 </body>
@@ -47,7 +48,7 @@ h2 {
 }
 
 /*JS*/
-
+//JS IS NOT SO EASY TO LEARN
 window.onload = function(){
     var css = document.querySelector("h3");
     var color1 = document.querySelector(".color1");
@@ -76,7 +77,7 @@ function setGradient() {
     css.textContent = body.style.background +";";
     }
 
-    //setGradient gets called automatically every time an input is selected 
+    setGradient gets called automatically every time an input is selected 
     color1.addEventListener("input", setGradient)
     color2.addEventListener("input", setGradient)
 
